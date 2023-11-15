@@ -1,0 +1,131 @@
+import java.awt.*;
+import javax.swing.*;
+import javax.swing.border.*;
+
+public class home{
+    static void imain(){
+
+        JFrame hframe = new JFrame();   //OverAll Frame
+        JLabel hlogo = new JLabel();    //USTP LOGO
+        JLabel hlabel = new JLabel("ROOM MANAGEMENT SYSTEM");
+        JLabel huserlogo = new JLabel();    //User Logo
+        JPanel hlogopanel = new JPanel();   //Background of the Panel
+        JLabel htlabel = new JLabel("ICT Laboratory Rooms");
+
+        //-------------- BUTTONS ---------------------//
+        JButton h1Button = new JButton("ROOM101");
+        JButton h2Button = new JButton("ROOM102");
+        JButton h3Button = new JButton("ROOM103");
+        JButton h4Button = new JButton("ROOM104");
+        JButton h5Button = new JButton("ROOM105");
+        JButton h6Button = new JButton("ROOM106");
+        JButton h7Button = new JButton("ROOM107");
+        JButton h8Button = new JButton("ROOM108");
+        
+
+        //-------------- LABEL PANEL -----------------//
+        hlabel.setFont(new Font("Sans", Font.BOLD, 20));
+        hlabel.setBounds(80, 0, 300, 50);
+
+        //----------------- LOGO ---------------------//
+        hlogo.setIcon(new ImageIcon(new ImageIcon("USTP.jpg").getImage().getScaledInstance(50, 50, Image.SCALE_SMOOTH)));
+        hlogo.setBounds(10,0,50,50);
+
+        huserlogo.setIcon(new ImageIcon(new ImageIcon("user.png").getImage().getScaledInstance(40, 40, Image.SCALE_SMOOTH)));
+        huserlogo.setBounds(500,0,50,50);
+
+        //--------------- LOGO PANEL ------------------//
+        hlogopanel.setBounds(0,0,800,50);
+        hlogopanel.setBackground(Color.lightGray);
+
+        //--------------- ICT LABEL ------------------//
+        htlabel.setFont(new Font("Sans", Font.BOLD, 20));
+        htlabel.setBounds(280, 80, 300, 50);
+
+        //--------------- ROOMS PANEL ------------------//
+
+        LineBorder line = new LineBorder(Color.black, 1, true);
+
+
+        h1Button.setBounds(40,150,100,50);
+        h1Button.setBackground(Color.green);
+        h1Button.setBorder(line);
+        h1Button.setForeground(Color.black);;
+        h1Button.setFocusPainted(false);
+        
+        h2Button.setBounds(160,150,100,50);
+        h2Button.setBackground(Color.green);
+        h2Button.setBorder(line);
+        h2Button.setForeground(Color.black);
+        h2Button.setFocusPainted(false);
+
+        h3Button.setBounds(280,150,100,50);
+        h3Button.setBackground(Color.green);
+        h3Button.setBorder(line);
+        h3Button.setForeground(Color.black);
+        h3Button.setFocusPainted(false);
+
+        h4Button.setBounds(400,150,100,50);
+        h4Button.setBackground(Color.green);
+        h4Button.setBorder(line);
+        h4Button.setForeground(Color.black);
+        h4Button.setFocusPainted(false);
+
+        h5Button.setBounds(520,150,100,50);
+        h5Button.setBackground(Color.green);
+        h5Button.setBorder(line);
+        h5Button.setForeground(Color.black);
+        h5Button.setFocusPainted(false);
+
+        h6Button.setBounds(640,150,100,50);
+        h6Button.setBackground(Color.green);
+        h6Button.setBorder(line);
+        h6Button.setForeground(Color.black);
+        h6Button.setFocusPainted(false);
+
+        h7Button.setBounds(280,220,100,50);
+        h7Button.setBackground(Color.green);
+        h7Button.setBorder(line);
+        h7Button.setForeground(Color.black);
+        h7Button.setFocusPainted(false);
+
+        h8Button.setBounds(400,220,100,50);
+        h8Button.setBackground(Color.green);
+        h8Button.setBorder(line);
+        h8Button.setForeground(Color.black);
+        h8Button.setFocusPainted(false);
+
+        //--------------- FRAME SETTINGS --------------//
+        hframe.setSize(800, 600);
+        hframe.setLocationRelativeTo(null);
+        hframe.setResizable(false);
+        hframe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        hframe.setTitle("FreedomWallers");
+
+        hframe.add(huserlogo);
+        hframe.add(hlabel);
+        hframe.add(hlogo);
+        hframe.add(htlabel);
+        hframe.add(h1Button);
+        hframe.add(h2Button);
+        hframe.add(h3Button);
+        hframe.add(h4Button);
+        hframe.add(h5Button);
+        hframe.add(h6Button);
+        hframe.add(h7Button);
+        hframe.add(h8Button);
+        
+        hframe.add(hlogopanel);
+        
+        
+        hframe.setLayout(null);
+        hframe.setVisible(true);
+    }
+
+
+
+    public static void main(String[] args){
+        imain();
+
+    }
+}
